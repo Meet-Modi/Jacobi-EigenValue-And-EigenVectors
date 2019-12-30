@@ -1,3 +1,3 @@
 # Eigen-Value algorithm
-This repository is about finding the eigenvalues and eigenvectors of an image or any input matrix using jacobi eigenvalue algorithm.
-The whole algorithm is coded in matlab And then the FPGA implementation using Verilog will be available.
+This Repository consists of implementation of Principal Component Analysis(PCA) of an N X N image input which is find using the Jacobi Eigenvalue Algorithm. Using the co-variance matrix `C = A*(A)^T` of an image A and applying similiar transformation on `C` and then finding 
+eigenvectors based on that. Mean Square error is also plotted against inbuilt function.
