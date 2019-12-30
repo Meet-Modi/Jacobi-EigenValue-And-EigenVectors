@@ -4,5 +4,4 @@ This Repository consists of implementation of Principal Component Analysis(PCA) 
 For the FPGA implementation, CORDIC algorithm was used for finding the angles for jacobi method. An input file of `32 X 32` in binary was 
 taken.All the modules are implemented using the pipelining technique for faster execution.
 ![Module Flow Diagram](Project.png)
-
-  ##            FPGA MODULES FLOW
+  ######            FPGA MODULES FLOW
