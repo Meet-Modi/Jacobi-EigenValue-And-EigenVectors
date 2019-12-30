@@ -5,4 +5,4 @@ For the FPGA implementation, CORDIC algorithm was used for finding the angles fo
 taken.All the modules are implemented using the pipelining technique for faster execution.
 ![Module Flow Diagram](Project.png)
 
-  ##FPGA MODULES FLOW
+  ##            FPGA MODULES FLOW
