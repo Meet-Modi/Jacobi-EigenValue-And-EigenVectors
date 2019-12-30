@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/image_ipcore.v"
+verilog work "Matrix_Multiply_32.v"

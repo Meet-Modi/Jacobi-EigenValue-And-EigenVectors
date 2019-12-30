@@ -1,0 +1,223 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: A_and_A_T.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "A_and_A_T.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "A_and_A_T"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : A_and_A_T
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\ipcore_dir\image_ipcore.v" into library work
+Parsing module <image_ipcore>.
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\Image_To_Vector.v" into library work
+Parsing module <Image_To_Vector>.
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" into library work
+Parsing module <A_and_A_T>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <A_and_A_T>.
+
+Elaborating module <Image_To_Vector>.
+
+Elaborating module <image_ipcore>.
+WARNING:HDLCompiler:1499 - "C:\MEET\PROJECTS\COLASS\Final_32\ipcore_dir\image_ipcore.v" Line 39: Empty module <image_ipcore> remains a black box.
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 45. $display ready flag - 1'b.
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 54. $display reset triggered
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 61. $display ans_2 - 32'b................................
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 62. $display Address 0
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 64. $display ready to load
+"C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 68. $display flag generated
+WARNING:HDLCompiler:634 - "C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v" Line 34: Net <enable> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <A_and_A_T>.
+    Related source file is "C:\MEET\PROJECTS\COLASS\Final_32\A_and_A_T.v".
+WARNING:Xst:653 - Signal <enable> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32x1024-bit single-port RAM <Mram_A> for signal <A>.
+    Found 5-bit register for signal <addressreg>.
+    Found 10-bit register for signal <diary>.
+    Found 1-bit register for signal <ready_to_load>.
+    Found 1-bit register for signal <ready_for_AA_T>.
+    Found 1-bit register for signal <counter_for_load_reg>.
+    Found 1024-bit register for signal <row_1>.
+    Found 1024-bit register for signal <row_2>.
+    Found 32768-bit register for signal <n33848[32767:0]>.
+    Found 1-bit register for signal <counterreg>.
+    Found 10-bit subtractor for signal <diary_wire> created at line 39.
+    Found 5-bit adder for signal <address> created at line 38.
+    Found 1-bit adder for signal <counter> created at line 40.
+    Found 1-bit adder for signal <counter_for_load> created at line 41.
+    Found 1024-bit 32-to-1 multiplexer for signal <addressreg[4]_A_T[31][1023]_wide_mux_33806_OUT> created at line 116.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 34835 D-type flip-flop(s).
+	inferred 32770 Multiplexer(s).
+Unit <A_and_A_T> synthesized.
+
+Synthesizing Unit <Image_To_Vector>.
+    Related source file is "C:\MEET\PROJECTS\COLASS\Final_32\Image_To_Vector.v".
+WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Image_To_Vector> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x1024-bit single-port RAM                           : 1
+# Adders/Subtractors                                   : 4
+ 1-bit adder                                           : 2
+ 10-bit subtractor                                     : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 1024-bit register                                     : 2
+ 32768-bit register                                    : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 32770
+ 1-bit 2-to-1 multiplexer                              : 33
+ 10-bit 2-to-1 multiplexer                             : 32
+ 1024-bit 32-to-1 multiplexer                          : 1
+ 11-bit 2-to-1 multiplexer                             : 32
+ 12-bit 2-to-1 multiplexer                             : 32
+ 13-bit 2-to-1 multiplexer                             : 32
+ 14-bit 2-to-1 multiplexer                             : 32
+ 15-bit 2-to-1 multiplexer                             : 32
+ 16-bit 2-to-1 multiplexer                             : 32
+ 17-bit 2-to-1 multiplexer                             : 32
+ 18-bit 2-to-1 multiplexer                             : 32
+ 19-bit 2-to-1 multiplexer                             : 32
+ 2-bit 2-to-1 multiplexer                              : 32
+ 20-bit 2-to-1 multiplexer                             : 32
+ 21-bit 2-to-1 multiplexer                             : 32
+ 22-bit 2-to-1 multiplexer                             : 32
+ 23-bit 2-to-1 multiplexer                             : 32
+ 24-bit 2-to-1 multiplexer                             : 32
+ 25-bit 2-to-1 multiplexer                             : 32
+ 26-bit 2-to-1 multiplexer                             : 32
+ 27-bit 2-to-1 multiplexer                             : 32
+ 28-bit 2-to-1 multiplexer                             : 32
+ 29-bit 2-to-1 multiplexer                             : 32
+ 3-bit 2-to-1 multiplexer                              : 32
+ 30-bit 2-to-1 multiplexer                             : 32
+ 31-bit 2-to-1 multiplexer                             : 32
+ 32-bit 2-to-1 multiplexer                             : 31776
+ 4-bit 2-to-1 multiplexer                              : 32
+ 5-bit 2-to-1 multiplexer                              : 32
+ 6-bit 2-to-1 multiplexer                              : 32
+ 7-bit 2-to-1 multiplexer                              : 32
+ 8-bit 2-to-1 multiplexer                              : 32
+ 9-bit 2-to-1 multiplexer                              : 32
+
+=========================================================================

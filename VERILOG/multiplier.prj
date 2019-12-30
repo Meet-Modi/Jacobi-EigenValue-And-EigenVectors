@@ -1,0 +1,3 @@
+verilog work "multiplication_normaliser.v"
+verilog work "ipcore_dir/image_ipcore.v"
+verilog work "Multiplier.v"

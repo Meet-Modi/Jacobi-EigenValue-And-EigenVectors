@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/MEET/PROJECTS/COLASS/Final_32/Matrix_Multiply_32_tb_isim_beh.exe" -prj "C:/MEET/PROJECTS/COLASS/Final_32/Matrix_Multiply_32_tb_beh.prj" "work.Matrix_Multiply_32_tb" "work.glbl" 

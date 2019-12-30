@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/MEET/PROJECTS/COLASS/Final_32/Matrix_Multiply_32.xst" -ofn "C:/MEET/PROJECTS/COLASS/Final_32/Matrix_Multiply_32.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Matrix_Multiply_32.ngc Matrix_Multiply_32_synthesis.v 

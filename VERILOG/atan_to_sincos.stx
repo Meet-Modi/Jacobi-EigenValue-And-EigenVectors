@@ -1,0 +1,60 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/MEET/PROJECTS/COLASS/Final_32/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Parameter xsthdpdir set to C:/MEET/PROJECTS/COLASS/Final_32/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Reading design: atan_to_sincos.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\ipcore_dir\image_ipcore.v" into library work
+Parsing module <image_ipcore>.
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\ipcore_dir\sincos.v" into library work
+Parsing module <sincos>.
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\ipcore_dir\atan.v" into library work
+Parsing module <atan>.
+Analyzing Verilog file "C:\MEET\PROJECTS\COLASS\Final_32\atan_to_sincos.v" into library work
+Parsing module <atan_to_sincos>.
+ERROR:HDLCompiler:715 - "C:\MEET\PROJECTS\COLASS\Final_32\atan_to_sincos.v" Line 24: Port ready_for_givens is not defined
+ERROR:HDLCompiler:598 - "C:\MEET\PROJECTS\COLASS\Final_32\atan_to_sincos.v" Line 21: Module <atan_to_sincos> ignored due to previous errors.
+Verilog file C:\MEET\PROJECTS\COLASS\Final_32\atan_to_sincos.v ignored due to errors
+--> 
+
+Total memory usage is 4516696 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

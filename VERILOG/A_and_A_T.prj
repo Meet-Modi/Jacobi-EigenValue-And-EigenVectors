@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/image_ipcore.v"
+verilog work "Image_To_Vector.v"
+verilog work "A_and_A_T.v"

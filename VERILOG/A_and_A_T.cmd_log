@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/MEET/PROJECTS/COLASS/Final_32/A_and_A_T.xst" -ofn "C:/MEET/PROJECTS/COLASS/Final_32/A_and_A_T.syr" 
+xst -intstyle ise -ifn "C:/MEET/PROJECTS/COLASS/Final_32/A_and_A_T.xst" -ofn "C:/MEET/PROJECTS/COLASS/Final_32/A_and_A_T.syr" 

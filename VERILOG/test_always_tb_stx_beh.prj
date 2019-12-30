@@ -1,0 +1,5 @@
+verilog isim_temp "multiplication_normaliser.v"
+verilog isim_temp "Multiplier.v"
+verilog isim_temp "test_always.v"
+verilog isim_temp "test_always_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

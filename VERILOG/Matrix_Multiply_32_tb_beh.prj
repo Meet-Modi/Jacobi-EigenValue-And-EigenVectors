@@ -1,0 +1,7 @@
+verilog work "multiplication_normaliser.v"
+verilog work "addition_normaliser.v"
+verilog work "Multiplier.v"
+verilog work "adder.v"
+verilog work "Matrix_Multiply_32.v"
+verilog work "Matrix_Multiply_32_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

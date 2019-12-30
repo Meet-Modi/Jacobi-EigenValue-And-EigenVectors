@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/MEET/PROJECTS/COLASS/Final_32/test_always.xst" -ofn "C:/MEET/PROJECTS/COLASS/Final_32/test_always.syr" 

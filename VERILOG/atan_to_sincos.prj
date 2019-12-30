@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/image_ipcore.v"
+verilog work "ipcore_dir/sincos.v"
+verilog work "ipcore_dir/atan.v"
+verilog work "atan_to_sincos.v"
